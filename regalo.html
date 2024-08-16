@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Tarjeta</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            background-image: url('recursos/fondo.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tarjeta {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-top: 95px;
+            text-align: center;
+            color: #2d3b5f;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #2d3b5f;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+        }
+
+        .imagen-pinguino {
+            width: 170px;
+            margin: 10px auto;
+            display: block;
+            margin-top: 40px;
+        }
+
+        .boton {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #7f00ff, #e100ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+            margin-top: 50px;
+        }
+
+        .boton:hover {
+            background: linear-gradient(45deg, #e100ff, #7f00ff);
+        }
+
+        .nota-pinguino {
+            font-size: 15px;
+            text-align: center;
+            color: #2d3b5f;
+            font-family: "Roboto", sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            .tarjeta {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .boton {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+
+            .imagen-pinguino {
+                width: 70px;
+                margin-top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h1>Hola señorito Cánepa</h1>
+        <p>En algún lugar leí una vez que los pingüinos buscan la piedrita más bonita que encuentran y se la dan a su pareja, también que los búhos le dan regalos a la pareja que quieren cortejar, y así más datos sobre animales que construyen refugios o realizan danzas para “su alguien” especial.</p>
+        <p>Bueno, es obvio que no soy un animal de estos pero sí provocaste en mí querer regalarte algo con bastante cariño porque me caes bien y quiero darte un pequeño detalle. Te mereces todas las flores del mundo, pero yo solo te puedo dar estas, así que presiona el botón que dice "Abrir" por favor.</p>
+        <a href="flores.html" class="boton">Abrir</a>
+        <img src="recursos/despedida.jpg" alt="Pingüinito" class="imagen-pinguino"> 
+        <p class="nota-pinguino">Hubieron momentos en los que me sentí identificada con este pingüinito jajaja.</p>
+    </div>
+</body>
+</html>
